@@ -1,28 +1,54 @@
-Monte Carlo Simulation (Python | Probabilistic Modeling)
+Monte Carlo Simulation for NVIDIA Stock Price Prediction
 
-This project demonstrates the implementation of a Monte Carlo simulation to model and analyze stochastic systems using Python. The simulation leverages repeated random sampling to estimate outcome distributions and quantify uncertainty in scenarios where analytical solutions are impractical.
+This project applies Monte Carlo simulation to model and predict the future price trajectories of NVIDIA (NVDA) stock. The approach leverages stochastic modeling to capture market uncertainty and generate a distribution of possible future price paths rather than a single point estimate.
 
-The notebook (train.ipynb) follows a structured ML-style workflow: defining probabilistic inputs, executing large-scale simulations, aggregating results, and visualizing statistical behavior. Emphasis is placed on efficient numerical computation, reproducibility, and interpretation of uncertainty.
+The core implementation is provided in the Jupyter Notebook train.ipynb, where historical NVDA price data is used to estimate statistical parameters (e.g., returns and volatility). These parameters are then used to simulate thousands of potential future price scenarios.
+
+Technical Overview
+
+Historical NVDA price data is processed to compute log returns
+
+Empirical mean and volatility are estimated from historical data
+
+Future price paths are simulated using random sampling
+
+Monte Carlo trajectories are aggregated to analyze:
+
+Expected future price behavior
+
+Variance and uncertainty
+
+Distribution of possible outcomes
 
 Skills Demonstrated
 
-Probabilistic and stochastic modeling
+Time-series analysis of financial data
 
-Monte Carlo methods and random sampling
+Stochastic modeling and Monte Carlo methods
 
-Statistical analysis and empirical estimation
+Probabilistic forecasting under uncertainty
 
-Vectorized numerical computing with NumPy
+Vectorized numerical computation with NumPy
 
-Data handling with Pandas
+Financial data handling with Pandas
 
-Result visualization and interpretation with Matplotlib
+Visualization of simulated price paths and distributions
 
-Clear, reproducible experimentation in Jupyter Notebooks
+Reproducible experimentation in Jupyter Notebook
 
-Why This Matters
+Why This Project Is Relevant
 
-Monte Carlo techniques are widely used in machine learning, quantitative finance, risk analysis, and scientific computing. This project showcases the ability to translate theoretical probabilistic concepts into efficient, practical code and to interpret results in a data-driven manner—skills directly relevant to applied ML and data science roles.
+Monte Carlo simulations are widely used in quantitative finance, risk management, and machine learning–driven forecasting. This project demonstrates the ability to:
+
+Translate financial theory into executable models
+
+Handle noisy, real-world time-series data
+
+Quantify uncertainty instead of relying on deterministic predictions
+
+Communicate results through clear visualizations
+
+These skills are directly applicable to ML engineer, data scientist, and quantitative analyst roles.
 
 How to Run
 git clone https://github.com/CS-AI-LA/MonteCarloSimulation.git
